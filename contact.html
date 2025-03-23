@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IWB-contacts</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #DAA520;
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 20%;
+            background: linear-gradient(to bottom, #333, #555);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            font-weight: bold;
+            padding: 12px 16px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        li a.active {
+            background-color: #DAA520;
+            color: black;
+        }
+
+        li a:hover {
+            background-color: #DAA520;
+            color: black;
+        }
+
+        .content {
+            margin-left: 22%;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        
+        .contact-form {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #DAA520;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="stakeholders.html">Stakeholders</a></li>
+        <li><a href="Our Partners.html">Our Partners</a></li>
+    </ul>
+
+    
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p class="contact-info">
+            IWB is found on multiple outlets. To easily reach us, please use the details below:
+        </p>
+
+        <h2>Get in Touch:</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@iwb.com">info@iwb.com</a></p>
+            <p>Address: 4567 Lempe Road, Maseru, Lesotho</p>
+            <p>Phone: +266 22325678 / +266 67800256</p>
+            <p>Follow us on Facebook: <a href="https://www.facebook.com/IWBElectronics" target="_blank">IWB ELECTRONICS</a></p>
+        </div>
+
+        
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 IWB. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

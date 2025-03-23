@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWB - Services</title>
+    <style>
+        body {
+            
+            margin: 0;
+            background-color: #DAA520;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sidebar Navigation */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 20%;
+            background: linear-gradient(to bottom, #333, #555);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            font-weight: bold;
+            padding: 12px 16px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        li a.active {
+            background-color: #DAA520;
+            color: black;
+        }
+
+        li a:hover {
+            background-color: #DAA520;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        .content {
+            margin-left: 22%;
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Service Cards */
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Oval Image Styling */
+        .service-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .service-card img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="stakeholders.html">Stakeholders</a></li>
+        <li><a href="Our Partners.html">Our Partners</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>OUR SERVICES</h1>
+        <p>IWB offers a variety of software and electronic recycling services at affordable prices.</p>
+        <p>We prioritize high-quality service and customer satisfaction.</p>
+
+        <h2>WHAT WE OFFER:</h2>
+
+        <div class="services-container">
+            <div class="service-card">
+                <img src="RAM.jpg" alt="RAM">
+                <h3>RAM</h3>
+                <p>We offer high-quality RAM at affordable prices.</p>
+                <p><strong>Price:</strong> M1500 - M6500</p>
+            </div>
+
+            <div class="service-card">
+                <img src="hard disk.jpg" alt="Hard Drive">
+                <h3>Hard Drives</h3>
+                <p>Our hard drives are durable and long-lasting.</p>
+                <p><strong>Price:</strong> M300 - M900</p>
+            </div>
+
+            <div class="service-card">
+                <img src="motherboard.jpg" alt="Motherboard">
+                <h3>Motherboard Components</h3>
+                <p>We import high-quality motherboards and components from China.</p>
+                <p><strong>Price:</strong> M750 - M2000</p>
+            </div>
+        </div>
+
+        <h2>OUR NEWEST ADDITIONS</h2>
+        <p>We have introduced new services to enhance customer satisfaction and ensure top-quality products.</p>
+
+        <div class="services-container">
+            <div class="service-card">
+                <img src="a2.jpg" alt="Recycling Computer Parts">
+                <h3>Recycling Computer Parts</h3>
+                <p>Eco-friendly recycling solutions to manage e-waste responsibly.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="a14.jpg" alt="Data Recovery">
+                <h3>Data Recovery & Destruction</h3>
+                <p>Secure data recovery and permanent deletion services.</p>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2025 IWB. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
